@@ -80,7 +80,7 @@
 /* ------------------------------------------------------------------ NAV ----------------------------------------------------------------------------------- */
 
 
-header {
+.header-home {
     background-image: url(../img/fondo.png);
     background-repeat: no-repeat;
     background-position: center center;
@@ -89,7 +89,7 @@ header {
     height: 800px;
 }
 
-ul{
+.ul-header-home{
     display: flex;
     gap: 5%;
     flex-flow: row nowrap;
@@ -100,14 +100,14 @@ ul{
     margin-bottom: 2%;   
 }
 
-a {
+.links-ul-header{
     text-decoration: none;
     color: white;
     font-family: 'Roboto', sans-serif;
     font-size: 0.9rem;
 }
 
-li {
+.li-item-nav {
     list-style: none;
 }
 .salir{
@@ -121,7 +121,7 @@ li {
 .user {
     width: 70%;
 }
-.user i{
+.user .icon-user{
     color:#2D3D81;
     background-color: white;
     height: 30px;
@@ -142,7 +142,7 @@ li {
     padding: 0 20%;
 }
 
-h2 {
+.h2-titulo-main {
     color: white;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
@@ -225,7 +225,7 @@ footer{
 
 
 @media screen and (max-width: 900px) {
-    header{
+    .header-home{
         height: 750px;
     }
     
@@ -268,10 +268,10 @@ footer{
 }
 
 @media screen and (max-width: 550px) {
-    header{
+    .header-home{
         height: 750px;
     }
-    ul{
+    .ul-header-home{
         display: block;
     }
     .carousel img{
@@ -285,7 +285,7 @@ footer{
         margin-top: 2%;
     }
     hr{
-        margin-top:7%;
+        margin-top:8%;
     }
     .separador{
         margin-top: -50px;
@@ -296,10 +296,10 @@ footer{
     .cont-logo p{
         margin-top: 10px;
     }
-    h2{
+    .h2-titulo-main{
         font-size: 2.5rem;
     }
-    p{
+    .descripcion-main{
       font-size: 0.9rem;  
     }
     .texto{
