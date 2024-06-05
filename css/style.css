@@ -76,6 +76,10 @@
 }
 
 
+
+
+
+
 /* ---------------------------------------------------------------- CARRUSEL--------------------------------------------------------------------------------- */
 /* ------------------------------------------------------------------ NAV ----------------------------------------------------------------------------------- */
 
@@ -221,6 +225,7 @@ hr{
     height: 60px;
 }
 
+
 /* ------------------------------------------------------------------ FIN FOOTER ---------------------------------------------------------------------------------- */
 
 
@@ -267,12 +272,34 @@ hr{
      }
 }
 
+.fa-solid.fa-bars {
+    display: none;
+}
+
 @media screen and (max-width: 550px) {
+    .fa-solid.fa-bars {
+        display: inline-block;
+    }
+    
+    .fa-solid.fa-user.icon-user{
+        display: none;
+    }
+    .ul-header-home{
+        display: flex;
+    }
+
+    .li-item-nav{
+        display: inline-block;
+        width: 100%;
+    }
+
     .header-home{
         height: 750px;
     }
     .ul-header-home{
-        display: block;
+        display: flex;
+        flex-direction: column;
+        height: 175px;
     }
     .carousel img{
         width: calc(90% / 1);
